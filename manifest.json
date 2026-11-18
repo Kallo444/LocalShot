@@ -1,0 +1,22 @@
+{
+  "manifest_version": 3,
+  "name": "LocalShot — Private Screenshot Tool",
+  "version": "1.0.1",
+  "description": "Privacy-first full-page, visible-tab and area screenshots saved locally.",
+  "permissions": ["activeTab", "scripting", "downloads", "storage", "offscreen", "commands"],
+  "action": { "default_title": "LocalShot", "default_popup": "popup.html" },
+  "background": { "service_worker": "background.js" },
+  "options_page": "options.html",
+  "commands": {
+    "capture-full-page": {
+      "suggested_key": { "default": "Alt+Shift+F", "mac": "Alt+Shift+F" },
+      "description": "Capture the full page"
+    },
+    "capture-visible-area": {
+      "suggested_key": { "default": "Alt+Shift+V", "mac": "Alt+Shift+V" },
+      "description": "Capture the visible screen"
+    }
+  },
+  "icons": { "128": "icons/icon128.png" },
+  "minimum_chrome_version": "116"
+}
