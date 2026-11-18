@@ -1,0 +1,10 @@
+{
+  "name": "localshot",
+  "version": "1.0.1",
+  "private": true,
+  "description": "Privacy-first local screenshot capture for Chrome",
+  "scripts": {
+    "check": "node --check background.js && node --check content.js && node --check offscreen.js && node --check popup.js && node --check options.js && node --check utils.js",
+    "test": "node --test"
+  }
+}
